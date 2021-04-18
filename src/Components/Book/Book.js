@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Book.css'
 import Navbar from '../Home/Header/Navbar/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCartArrowDown, faKeyboard, faList } from '@fortawesome/free-solid-svg-icons'
+import {faCartArrowDown, faEdit, faKeyboard, faList, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { Link} from 'react-router-dom';
 import BookForm from './BookForm/BookForm';
 import BooKingList from './BookingList/BookingList'
@@ -68,15 +68,15 @@ const Book = () => {
                 <div className="d-flex flex-column mb-3 text-center book-menu">
                
                 <div className="p-2 mt-3" onClick={handleBookList}><FontAwesomeIcon icon={faList}/>  Booking List</div>
-                {
-                  loggedInUser&&  <div className="p-2 mt-3" onClick={handleReview}><FontAwesomeIcon icon={faKeyboard}/>  Review</div>
-                }
+                
+                  <Link to="/reviewForm"> <div className="p-2 mt-3" onClick={handleReview}><FontAwesomeIcon icon={faKeyboard}/>  Review</div> </Link>
+                
                
 
               {
                   isAdmin && <div>
-                  <div className="p-2 mt-3" onClick={handleAddService}><FontAwesomeIcon icon={faKeyboard}/>  Add Services</div>
-                  <div className="p-2 mt-3" onClick={handleManage}><FontAwesomeIcon icon={faKeyboard}/>  Manage</div>
+                  <div className="p-2 mt-3" onClick={handleAddService}><FontAwesomeIcon icon={faPlus}/>  Add Services</div>
+                  <div className="p-2 mt-3" onClick={handleManage}><FontAwesomeIcon icon={faEdit}/>  Manage</div>
                   </div>
                 
               }

@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import logo from '../../../../images/log.png'
-import { UserContext } from '../../../../App';
+
 
 const Navbar = () => {
    
@@ -29,7 +29,10 @@ const Navbar = () => {
             <Link to='/admin'><Link to="/admin"> <a className="nav-link mr-4">Admin</a></Link></Link>   
             </li>
             <li className="nav-item">
-             <Link to="/login"><a className="nav-link mr-4" >Login</a></Link> 
+             {
+                 <Link to="/login"><a className="nav-link mr-4" >Login</a></Link> 
+               
+             }
             </li>
             </ul>
         

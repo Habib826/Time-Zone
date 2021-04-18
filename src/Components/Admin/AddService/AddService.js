@@ -25,7 +25,6 @@ const AddService = () => {
 
     }
     const onSubmit= data => {
-        
         console.log(data)
         const eventData={
             name: data.name,

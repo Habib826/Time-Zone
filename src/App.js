@@ -40,7 +40,7 @@ function App() {
         <Route path="/bookingList">
           <BookingList/>
         </Route>
-        <PrivateRoute path="/review">
+        <PrivateRoute path="/reviewForm">
           <ReviewForm/>
         </PrivateRoute>
         <Route path="/book:id">
