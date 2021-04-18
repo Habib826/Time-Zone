@@ -1,6 +1,5 @@
 import React from 'react';
 import './Custom.css'
-import custom from '../../../images/custom.jpg'
 
 const Custom = () => {
     return (

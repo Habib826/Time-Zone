@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import ReactStars from "react-rating-stars-component";
 import { UserContext } from '../../../App';
-import Navbar from '../../Home/Header/Navbar/Navbar';
+
 
 const ReviewForm = () => {
     const [loggedInUser, setLoggedInUser]= useContext(UserContext);
