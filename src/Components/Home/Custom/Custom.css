@@ -1,0 +1,11 @@
+.custom-container{
+    background-image: url('../../../images/custom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 85%;
+}

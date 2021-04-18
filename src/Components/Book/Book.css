@@ -1,0 +1,12 @@
+.book-main{
+    width: 85%;
+    margin: auto;
+}
+.book-menu{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #E6E4E4;
+    height: 400px;
+    width: 100%;
+    
+}
